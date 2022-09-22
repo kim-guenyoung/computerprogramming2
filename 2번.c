@@ -1,24 +1,18 @@
 /*
-//2. 두 개의 실수를 입력 받아 합계와 평균을 구하는 함수를 각각 만들어서 호출하세요.
+//2. 다음 코드의 실행 결과를 예측해 보고, 코드를 직접 실행해본 결과와 일치하는지 확인하세요.
 #include <stdio.h>
-float add(float A, float B); //함수 호출
-float average(float A, float B);
-
 int main(void)
 {
-	float a, b;
-	printf("실수 2개 입력 : ");
-	scanf_s(%f %f", &a, &b);
+	int arr[3];
 
-	printf("합 : %f", add(a, b));
-	printf("평균 : %f", average(a, b));
-	return 0;
-}
-float add(float A, float B)
-{
-	return A + B;
-}
-float average(float A, float B)
-{
-	return (A + B) / 2;
+	int* pa = arr;
+
+	pa = pa + 1;
+	//다음 주소를 가리킨다
+	100이면 다음 주소는 int라고 했을 때 104가 된다.
+	printf("%u ", pa);
+	//arr = arr + 1; //배열의 이름은 상수이기 때문에 이 문장 잘못된 문장
+	//배열도 포인터처럼 주소를 담고 있지만 포인터는 변수, 배열의 이름은 상수 
+
+	printf("%u ", arr); //타입 int니까 4만큼 차이남.
 }*/
